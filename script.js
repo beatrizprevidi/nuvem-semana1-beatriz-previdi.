@@ -5,6 +5,8 @@ const btnPost = document.getElementById("btnPost");
 function show(obj) {
 out.textContent = typeof obj === "string" ? obj : JSON.stringify(obj, null, 2);
 }
+document.addEventListener("DOMContentLoaded", () => {
+});
 
 async function httpGetWeather() {
 show("Buscando clima (GET)...");
